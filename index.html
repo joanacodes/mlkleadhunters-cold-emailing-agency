@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>mlkLeadHunters — B2B cold email that books real meetings</title>
-<meta name="description" content="Done-for-you B2B cold email. We book qualified meetings with decision-makers in your market — targeted, GDPR-compliant, fully managed.">
-<link rel="canonical" href="https://mlkwebstudio.co.uk/">
+<title>mlkLeadHunters — Cold email that grows your accounting firm's book</title>
+<meta name="description" content="Done-for-you cold email for accounting firms. We book qualified meetings with local business owners — fully compliant with your professional code of conduct. Paris & Île-de-France.">
+<link rel="canonical" href="https://mlkleadhunters.co.uk/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="mlkLeadHunters">
-<meta property="og:title" content="mlkLeadHunters — B2B cold email that books real meetings">
-<meta property="og:description" content="Done-for-you B2B cold email. Qualified meetings with decision-makers in your market — targeted, compliant, fully managed.">
-<meta property="og:url" content="https://mlkwebstudio.co.uk/">
+<meta property="og:title" content="mlkLeadHunters — Cold email that grows your accounting firm's book">
+<meta property="og:description" content="Done-for-you cold email for accounting firms. We book qualified meetings with local business owners — fully compliant with your professional code of conduct. Paris & Île-de-France.">
+<meta property="og:url" content="https://mlkleadhunters.co.uk/">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mlkLeadHunters — B2B cold email that books real meetings">
-<meta name="twitter:description" content="Qualified meetings with decision-makers in your market — targeted, compliant, fully managed.">
+<meta name="twitter:title" content="mlkLeadHunters — Cold email that grows your accounting firm's book">
+<meta name="twitter:description" content="Done-for-you cold email for accounting firms. We book qualified meetings with local business owners — fully compliant with your professional code of conduct. Paris & Île-de-France.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23231A12'/%3E%3Ccircle cx='12' cy='12' r='7' stroke='%23EF571D' stroke-width='1.8' fill='none'/%3E%3Cpath d='M12 4v4M12 16v4M4 12h4M16 12h4' stroke='%23EF571D' stroke-width='1.8'/%3E%3Ccircle cx='12' cy='12' r='1.9' fill='%23EF571D'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Using Questrial for now. A second (display) font will slot into --font-display later. -->
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -97,7 +98,7 @@
     background:
       linear-gradient(90deg, rgba(18,12,7,.82) 0%, rgba(18,12,7,.45) 42%, rgba(18,12,7,.10) 100%),
       url('hero.jpg') center/cover no-repeat #241809;
-    clip-path:polygon(0 0,100% 0,100% calc(100% - 52px),calc(100% - 52px) 100%,0 100%)}
+    clip-path:polygon(0 0,100% 0,100% calc(100% - 64px),calc(100% - 300px) calc(100% - 64px),calc(100% - 344px) 100%,0 100%)}
   .hero-photo-note{position:absolute;top:96px;right:26px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)}
   .hero .wrap{padding-top:150px;padding-bottom:96px;position:relative;z-index:2}
   .hero-content{max-width:640px}
@@ -286,9 +287,19 @@
     .wrap{padding:0 20px}
     .results-inner,.band{grid-template-columns:1fr}
   }
+
+  /* Meridian tab shape with rounded corners on media blocks */
+  .how-media,.deliv-media,.f-media{border-radius:0;clip-path:url(#mediaClip)}
+  @media (max-width:600px){
+    .hero,.page-hero{clip-path:polygon(0 0,100% 0,100% calc(100% - 44px),calc(100% - 150px) calc(100% - 44px),calc(100% - 182px) 100%,0 100%) !important}
+  }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="mediaClip" clipPathUnits="objectBoundingBox">
+<path d="M 0,0.16 L 0,0.93 Q 0,1 0.026,1 L 0.974,1 Q 1,1 1,0.93 L 1,0.07 Q 1,0 0.974,0 L 0.705,0 Q 0.678,0 0.662,0.024 L 0.604,0.096 Q 0.588,0.12 0.558,0.12 L 0.026,0.12 Q 0,0.12 0,0.16 Z"/>
+</clipPath></defs></svg>
 
 <!-- NAV -->
 <nav class="nav">
@@ -304,7 +315,7 @@
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </div>
-    <a href="#contact" class="btn btn-primary nav-cta">Book a discovery call</a>
+    <div style="display:flex;gap:10px;align-items:center"><a class="lang" href="https://mlkleadhunters.fr/">FR</a><a href="#contact" class="btn btn-primary nav-cta">Book a discovery call</a></div>
     <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
@@ -323,9 +334,9 @@
 <header class="hero">
   <div class="wrap">
     <div class="hero-content">
-      <span class="eyebrow">B2B lead generation</span>
-      <h1>Built for B2B. Ready to fill your pipeline.</h1>
-      <p>We book qualified meetings with the decision-makers in your market — fully done for you, from targeting to reply handling.</p>
+      <span class="eyebrow">Cold email for accountants</span>
+      <h1>Built for accountants. Ready to grow your book.</h1>
+      <p>We book qualified meetings with the local business owners and independents around you — fully done for you, and entirely within your professional code of conduct.</p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">Book a discovery call <span class="arrow">→</span></a>
         <a href="#services" class="btn btn-ghost-light">See how it works</a>
@@ -347,10 +358,10 @@
 <!-- INTRO -->
 <section class="intro">
   <div class="wrap intro-grid">
-    <h2>We help B2B businesses grow faster with targeted, done-for-you cold email.</h2>
+    <h2>We help accounting firms grow their client book with targeted, done-for-you cold email.</h2>
     <div class="intro-side">
-      <p>We turn your market into a steady stream of qualified conversations — and only the prospects ready to buy reach your calendar.</p>
-      <p>No spray-and-pray, no burned domains. Sharp, GDPR-compliant outreach that lands meetings.</p>
+      <p>We turn the local businesses and independents around you into a steady stream of qualified conversations — and only the ones actively looking for a new accountant reach your desk.</p>
+      <p>No mass mailing, no risk to your reputation. Sober, compliant outreach that respects your Order's rules.</p>
       <a href="#contact" class="btn btn-dark">Start growing today</a>
     </div>
   </div>
@@ -361,8 +372,8 @@
   <div class="about">
     <div>
       <span class="eyebrow">About us</span>
-      <h2>Done-for-you outreach that books real meetings</h2>
-      <p>From targeting to reply handling, we run the whole outbound engine so your team can stay focused on closing. Every message is reviewed by you before a single send goes out.</p>
+      <h2>Outreach that respects your profession</h2>
+      <p>From targeting to reply handling, we run the whole outbound engine so you can stay on the books. Every message is sober, non-comparative and approved by you before it goes out — fully within your code of conduct.</p>
       <a href="#contact" class="btn btn-primary">Contact us</a>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start">
@@ -375,8 +386,8 @@
 <!-- TRUSTED -->
 <section class="trusted">
   <div class="wrap">
-    <div class="cap">Trusted by growing B2B businesses</div>
-    <div class="logos"><span>Quantira</span><span>Stratfyx</span><span>Nexora</span><span>Veltrix</span><span>Lognova</span><span>Aureon</span></div>
+    <div class="cap">Trusted by growing accounting firms</div>
+    <div class="logos"><span>Fiduco</span><span>Novexa</span><span>Compta+</span><span>Gestae</span><span>Audivo</span><span>Cabinet Rhône</span></div>
   </div>
 </section>
 
@@ -394,13 +405,13 @@
   <div class="wrap">
     <div class="head-center">
       <span class="eyebrow">What we do</span>
-      <h2>Everything your outbound needs, handled end to end</h2>
+      <h2>Everything your outreach needs, handled end to end</h2>
     </div>
     <div class="svc-grid">
-      <div class="svc"><div class="ic">◎</div><h3>Targeting &amp; list building</h3><p>We build and verify lists of the decision-makers most likely to need you right now — so every send reaches a real buyer, zero bounces.</p></div>
+      <div class="svc"><div class="ic">◎</div><h3>Targeting &amp; list building</h3><p>We build and verify lists of the local business owners, freelancers and professionals most likely to be looking for a new accountant.</p></div>
       <div class="svc"><div class="ic">✉</div><h3>Deliverability &amp; setup</h3><p>Dedicated domains, warm-up, SPF/DKIM/DMARC. Your main domain stays untouched and your emails stay out of spam.</p></div>
-      <div class="svc"><div class="ic">✎</div><h3>Copywriting &amp; sequences</h3><p>Human, sharp 3–4 step sequences written to open conversations — not to get deleted. GDPR-compliant, and you approve every word.</p></div>
-      <div class="svc"><div class="ic">↗</div><h3>Reporting &amp; handoff</h3><p>We reply, qualify and hand you only the hot leads, with a clear monthly report on sends, replies and meetings.</p></div>
+      <div class="svc"><div class="ic">✎</div><h3>Compliant copywriting</h3><p>Sober, exact, non-comparative messages written to Article 152 of your code of conduct — never mass mailing, always human. You approve every word.</p></div>
+      <div class="svc"><div class="ic">↗</div><h3>Reporting &amp; handoff</h3><p>We reply, qualify and hand you only the prospects ready to talk, with a clear monthly report on sends, replies and meetings.</p></div>
     </div>
   </div>
 </section>
@@ -409,41 +420,41 @@
 <section class="section sand" id="work">
   <div class="wrap">
     <div class="head-lead">
-      <div><span class="eyebrow">Case studies</span><h2>Real results for businesses like yours</h2></div>
+      <div><span class="eyebrow">Case studies</span><h2>Real results for firms like yours</h2></div>
       <a href="#contact" class="btn btn-ghost">Work with a specialist</a>
     </div>
     <div class="case-grid">
-      <div class="case"><div><div class="tag">HVAC / trades</div><h3>Filling an AC installer's pipeline with commercial projects</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
-      <div class="case"><div><div class="tag">Professional services</div><h3>New recurring clients for a chartered accounting firm</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
-      <div class="case"><div><div class="tag">SaaS</div><h3>From a cold list to booked product demos</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
-      <div class="case"><div><div class="tag">Recruitment</div><h3>Booked mandates for a recruitment agency</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
+      <div class="case"><div><div class="tag">Independent practice</div><h3>Booking recurring clients for a solo practitioner</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
+      <div class="case"><div><div class="tag">Startups</div><h3>Reaching new companies before the online platforms do</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
+      <div class="case"><div><div class="tag">Local business</div><h3>Filling a firm's book with nearby SMEs and shops</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
+      <div class="case"><div><div class="tag">Payroll</div><h3>Winning payroll-outsourcing mandates for a mid-size cabinet</h3></div><div class="case-foot"><a href="#contact">Read case study →</a></div></div>
     </div>
   </div>
 </section>
 
-<!-- HOW WE WORK (aperçu) -->
+<!-- HOW WE WORK -->
 <section class="section" id="how">
   <div class="wrap how">
     <div class="how-media"></div>
     <div>
       <span class="eyebrow">How we work</span>
-      <h2>Outreach that respects your brand and the rules</h2>
-      <div class="check"><span class="t">✓</span><div><b>Targeted, never spray-and-pray</b><span>Small, precise lists beat mass blasts every time.</span></div></div>
-      <div class="check"><span class="t">✓</span><div><b>GDPR-compliant by design</b><span>Professional messages, clear sender identity, one-click opt-out.</span></div></div>
+      <h2>Outreach that stays within your code of conduct</h2>
+      <div class="check"><span class="t">✓</span><div><b>Prospecting is allowed — since 2014</b><span>Direct outreach has been permitted for accountants since the 2014 decree. We keep it that way.</span></div></div>
+      <div class="check"><span class="t">✓</span><div><b>Targeted, never mass mailing</b><span>Small, precise lists — the discreet kind your Order requires.</span></div></div>
+      <div class="check"><span class="t">✓</span><div><b>Sober and non-comparative</b><span>No hype, no comparisons to other firms. Dignified by design.</span></div></div>
       <div class="check"><span class="t">✓</span><div><b>You approve every message</b><span>Nothing goes out without your sign-off.</span></div></div>
-      <div class="check"><span class="t">✓</span><div><b>Only qualified leads reach you</b><span>We filter the noise so you only see buyers.</span></div></div>
-      <div class="check"><span class="t">✓</span><div><b>Transparent monthly reporting</b><span>Sends, replies, meetings — no black box.</span></div></div>
+      <div class="check"><span class="t">✓</span><div><b>Only qualified leads reach you</b><span>We filter the noise so you only meet prospects worth your time.</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- BAND -->
+<!-- PIPELINE BAND -->
 <section class="wrap">
   <div class="band">
-    <h2>Building stronger pipelines, one campaign at a time</h2>
-    <div class="s"><div class="n">€2.4M<sup>+</sup></div><div class="l">Pipeline influenced</div></div>
+    <h2>Building fuller client books, one campaign at a time</h2>
     <div class="s"><div class="n">17.6k</div><div class="l">Conversations started</div></div>
     <div class="s"><div class="n">31%</div><div class="l">Average reply rate</div></div>
+    <div class="s"><div class="n">3+ yrs</div><div class="l">Typical client lifetime</div></div>
   </div>
 </section>
 
@@ -451,8 +462,8 @@
 <section class="section">
   <div class="wrap quote-wrap">
     <span class="eyebrow" style="justify-content:center">What clients say</span>
-    <p class="quote" style="margin-top:20px">"Within weeks we went from chasing referrals to a calendar full of qualified calls. It's the most predictable our pipeline has ever been."</p>
-    <div class="quote-by"><span class="av"></span><span class="who"><b>Michael Thompson</b><small>Founder, ecommerce brand</small></span></div>
+    <p class="quote" style="margin-top:20px">"We'd always grown by word of mouth. Now we have a steady flow of qualified prospects — and it's completely within our professional rules."</p>
+    <div class="quote-by"><span class="av"></span><span class="who"><b>Partner name</b><small>Chartered accounting firm</small></span></div>
   </div>
 </section>
 
@@ -460,7 +471,7 @@
 <section class="section sand">
   <div class="wrap">
     <div class="head-lead">
-      <div><span class="eyebrow">The team</span><h2>The people running your outbound</h2></div>
+      <div><span class="eyebrow">The team</span><h2>The people running your outreach</h2></div>
       <a href="#contact" class="btn btn-ghost">Book a discovery call</a>
     </div>
     <div class="team-slider">
@@ -513,25 +524,26 @@
   </div>
 </section>
 
+
 <!-- CONTACT -->
 <section class="section sand" id="contact">
   <div class="wrap contact-grid contact">
     <div class="contact-side">
       <span class="eyebrow">Contact</span>
       <h2>Let's start the conversation</h2>
-      <p>Tell us where you are and what you're trying to grow. We'll come back within 48 hours to book your free discovery call.</p>
+      <p>Tell us about your firm and the clients you want to win. We'll come back within 48 hours to book your free discovery call.</p>
       <div class="cbenefit">15-minute call, no obligation</div>
-      <div class="cbenefit">An honest read on your market</div>
-      <div class="cbenefit">A clear plan whether we work together or not</div>
+      <div class="cbenefit">An honest read on your area's potential</div>
+      <div class="cbenefit">A clear, compliant plan — whether we work together or not</div>
     </div>
     <div>
       <div class="field"><label>Your name</label><input id="f-name" type="text" placeholder="Jane Doe"></div>
-      <div class="field"><label>Email</label><input id="f-email" type="email" placeholder="you@company.com"></div>
+      <div class="field"><label>Email</label><input id="f-email" type="email" placeholder="you@firm.com"></div>
       <div class="field-row">
-        <div class="field"><label>Company</label><input id="f-company" type="text" placeholder="Company"></div>
-        <div class="field"><label>Website</label><input id="f-web" type="text" placeholder="company.com"></div>
+        <div class="field"><label>Firm</label><input id="f-company" type="text" placeholder="Your firm"></div>
+        <div class="field"><label>Website</label><input id="f-web" type="text" placeholder="firm.com"></div>
       </div>
-      <div class="field"><label>What are you trying to grow?</label><textarea id="f-msg" placeholder="Tell us about your business and your goals"></textarea></div>
+      <div class="field"><label>What would you like to grow?</label><textarea id="f-msg" placeholder="Tell us about your firm and your goals"></textarea></div>
       <button class="btn btn-dark" style="width:100%;justify-content:center" onclick="sendInquiry()">Send inquiry</button>
       <p class="form-note">Goes straight to hello@mlkleadhunter.com</p>
     </div>
@@ -541,8 +553,8 @@
 <!-- FOOTER -->
 <footer class="foot-cta">
   <div class="foot-cta-inner">
-    <h2>Ready to become our next success story?</h2>
-    <p>Let's create measurable growth for your business with cold email that actually books meetings.</p>
+    <h2>Ready to grow your client book?</h2>
+    <p>Let's create measurable growth for your firm with compliant cold email that books real meetings.</p>
     <a href="#contact" class="btn btn-primary">Book a discovery call →</a>
   </div>
   <div class="foot-nav">
@@ -551,7 +563,7 @@
         <svg class="mark" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#EF571D" stroke-width="2"/><path d="M12 2v6M12 16v6M2 12h6M16 12h6" stroke="#EF571D" stroke-width="2"/><circle cx="12" cy="12" r="2.4" fill="#EF571D"/></svg>
         <span><b>mlk</b>LeadHunters</span>
       </div>
-      <p style="color:#a7a2d6;font-size:13.5px;margin-top:14px;max-width:30ch">Done-for-you B2B cold email. Paris &amp; Île-de-France.</p>
+      <p style="color:#a7a2d6;font-size:13.5px;margin-top:14px;max-width:32ch">Done-for-you cold email for accounting firms. Paris &amp; Île-de-France.</p>
     </div>
     <div class="foot-col"><h4>Services</h4><a href="how-we-work.html#targeting">Targeting</a><a href="how-we-work.html#deliverability">Deliverability</a><a href="how-we-work.html#copywriting">Copywriting</a><a href="how-we-work.html#reporting">Reporting</a></div>
     <div class="foot-col"><h4>Company</h4><a href="#work">Case studies</a><a href="how-we-work.html">How we work</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div>
@@ -559,7 +571,7 @@
   </div>
   <div class="foot-bottom">
     <span>© 2026 mlkLeadHunters. All rights reserved.</span>
-    <span>B2B cold email that books real meetings.</span>
+    <span>Compliant cold email for accountants.</span>
   </div>
 </footer>
 
@@ -584,7 +596,7 @@
     var c=document.getElementById('f-company').value||'';
     var w=document.getElementById('f-web').value||'';
     var m=document.getElementById('f-msg').value||'';
-    var body='Name: '+n+'%0D%0AEmail: '+e+'%0D%0ACompany: '+c+'%0D%0AWebsite: '+w+'%0D%0A%0D%0A'+m;
+    var body='Name: '+n+'%0D%0AEmail: '+e+'%0D%0AFirm: '+c+'%0D%0AWebsite: '+w+'%0D%0A%0D%0A'+m;
     window.location.href='mailto:hello@mlkleadhunter.com?subject=Discovery%20call%20request%20-%20'+encodeURIComponent(c||n)+'&body='+body;
   }
   var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.style.opacity=1;x.target.style.transform='none';x.target.style.transition='.6s ease'}})},{threshold:.12});

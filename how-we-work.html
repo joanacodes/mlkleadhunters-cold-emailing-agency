@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How we work — mlkLeadHunters</title>
-<meta name="description" content="From targeting to booked meetings in four steps: verified prospect lists, protected deliverability, compliant copywriting and transparent reporting for B2B businesses.">
-<link rel="canonical" href="https://YOUR-DOMAIN.com/how-we-work.html">
+<meta name="description" content="From targeting to booked meetings in four steps: verified prospect lists, protected deliverability, compliant copywriting and transparent reporting for accounting firms.">
+<link rel="canonical" href="https://mlkleadhunters.co.uk/how-we-work.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="mlkLeadHunters">
 <meta property="og:title" content="How we work — mlkLeadHunters">
-<meta property="og:description" content="From targeting to booked meetings in four steps.">
-<meta property="og:url" content="https://YOUR-DOMAIN.com/how-we-work.html">
+<meta property="og:description" content="From targeting to booked meetings in four steps: verified prospect lists, protected deliverability, compliant copywriting and transparent reporting for accounting firms.">
+<meta property="og:url" content="https://mlkleadhunters.co.uk/how-we-work.html">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How we work — mlkLeadHunters">
-<meta name="twitter:description" content="From targeting to booked meetings in four steps.">
+<meta name="twitter:description" content="From targeting to booked meetings in four steps: verified prospect lists, protected deliverability, compliant copywriting and transparent reporting for accounting firms.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23231A12'/%3E%3Ccircle cx='12' cy='12' r='7' stroke='%23EF571D' stroke-width='1.8' fill='none'/%3E%3Cpath d='M12 4v4M12 16v4M4 12h4M16 12h4' stroke='%23EF571D' stroke-width='1.8'/%3E%3Ccircle cx='12' cy='12' r='1.9' fill='%23EF571D'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,11 +77,9 @@
   .nav{margin-bottom:-74px}
   .page-hero{position:relative;min-height:74vh;display:flex;align-items:flex-start;color:#fff;overflow:hidden;
     background:
-      linear-gradient(90deg, rgba(18,12,7,.9) 0%, rgba(18,12,7,.55) 42%, rgba(18,12,7,.12) 100%),
-      repeating-linear-gradient(90deg, rgba(255,255,255,.055) 0 2px, rgba(0,0,0,.10) 2px 10px),
-      radial-gradient(120% 90% at 78% 25%, rgba(239,87,29,.34), transparent 55%),
-      linear-gradient(120deg,#241809 0%, #6d4a29 58%, #b98a56 100%);
-    clip-path:polygon(0 0,100% 0,100% calc(100% - 52px),calc(100% - 52px) 100%,0 100%)}
+      linear-gradient(90deg, rgba(18,12,7,.82) 0%, rgba(18,12,7,.45) 42%, rgba(18,12,7,.10) 100%),
+      url('hero.jpg') center/cover no-repeat #241809;
+    clip-path:polygon(0 0,100% 0,100% calc(100% - 64px),calc(100% - 300px) calc(100% - 64px),calc(100% - 344px) 100%,0 100%)}
   .page-hero .wrap{padding-top:150px;padding-bottom:96px;position:relative;z-index:2}
   .hero-content{max-width:640px}
   .page-hero h1{font-size:clamp(38px,5.8vw,72px);font-weight:500;margin:18px 0 22px;text-shadow:0 2px 30px rgba(0,0,0,.25)}
@@ -187,9 +185,19 @@
     .wrap{padding:0 20px}
     .inc-grid{grid-template-columns:1fr}
   }
+
+  /* Meridian tab shape with rounded corners on media blocks */
+  .how-media,.deliv-media,.f-media{border-radius:0;clip-path:url(#mediaClip)}
+  @media (max-width:600px){
+    .hero,.page-hero{clip-path:polygon(0 0,100% 0,100% calc(100% - 44px),calc(100% - 150px) calc(100% - 44px),calc(100% - 182px) 100%,0 100%) !important}
+  }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="mediaClip" clipPathUnits="objectBoundingBox">
+<path d="M 0,0.16 L 0,0.93 Q 0,1 0.026,1 L 0.974,1 Q 1,1 1,0.93 L 1,0.07 Q 1,0 0.974,0 L 0.705,0 Q 0.678,0 0.662,0.024 L 0.604,0.096 Q 0.588,0.12 0.558,0.12 L 0.026,0.12 Q 0,0.12 0,0.16 Z"/>
+</clipPath></defs></svg>
 
 <!-- NAV -->
 <nav class="nav">
@@ -205,7 +213,7 @@
       <a href="index.html#pricing">Pricing</a>
       <a href="index.html#contact">Contact</a>
     </div>
-    <a href="index.html#contact" class="btn btn-primary nav-cta">Book a discovery call</a>
+    <div style="display:flex;gap:10px;align-items:center"><a class="lang" href="https://mlkleadhunters.fr/notre-methode.html">FR</a><a href="index.html#contact" class="btn btn-primary nav-cta">Book a discovery call</a></div>
     <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
@@ -220,7 +228,7 @@
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- PAGE HERO -->
 <header class="page-hero">
   <div class="wrap">
     <div class="hero-content">
@@ -239,7 +247,7 @@
 <section class="overview">
   <div class="wrap">
     <span class="eyebrow" style="justify-content:center">Overview</span>
-    <p>A structured engagement that fills your calendar with qualified prospects — while protecting your brand and staying within the law.</p>
+    <p>A structured engagement that fills your calendar with qualified prospects — while staying fully within your profession's code of conduct.</p>
   </div>
 </section>
 
@@ -248,9 +256,9 @@
   <div class="wrap">
     <h2>What's included</h2>
     <div class="inc-grid">
-      <div class="inc"><div class="ic">◎</div><h3>Targeting &amp; lists</h3><p>We map and verify the decision-makers in your market most likely to need you right now.</p></div>
+      <div class="inc"><div class="ic">◎</div><h3>Targeting &amp; lists</h3><p>We map and verify the local business owners and independents most likely to need a new accountant.</p></div>
       <div class="inc"><div class="ic">✉</div><h3>Sending infrastructure</h3><p>Dedicated domains, warm-up and full authentication — your main domain is never touched.</p></div>
-      <div class="inc"><div class="ic">✎</div><h3>Compliant sequences</h3><p>Sharp, human messages that respect GDPR and your brand. You approve every word.</p></div>
+      <div class="inc"><div class="ic">✎</div><h3>Compliant sequences</h3><p>Sober, non-comparative messages written to your code of conduct. You approve every word.</p></div>
       <div class="inc"><div class="ic">↗</div><h3>Replies &amp; reporting</h3><p>We qualify every response and hand you only the prospects ready to talk, with a clear monthly report.</p></div>
     </div>
   </div>
@@ -264,9 +272,9 @@
       <h2 style="margin-top:14px">From kickoff to first meetings in four steps</h2>
     </div>
     <div class="steps">
-      <div class="pstep"><span class="num">1</span><div><b>Kickoff &amp; targeting</b><p>One call to define your ideal clients, your market and your capacity. We build and verify the list.</p></div><span class="dur">Week 1</span></div>
+      <div class="pstep"><span class="num">1</span><div><b>Kickoff &amp; targeting</b><p>One call to define your ideal clients, your zone and your capacity. We build and verify the list.</p></div><span class="dur">Week 1</span></div>
       <div class="pstep"><span class="num">2</span><div><b>Setup &amp; warm-up</b><p>Dedicated sending domains configured and warmed so every email lands in the inbox — never spam.</p></div><span class="dur">Weeks 1–3</span></div>
-      <div class="pstep"><span class="num">3</span><div><b>Sequences &amp; your approval</b><p>We write the 3–4 message sequence, compliant and in your brand's voice. Nothing is sent until you sign off.</p></div><span class="dur">Week 2</span></div>
+      <div class="pstep"><span class="num">3</span><div><b>Sequences &amp; your approval</b><p>We write the 3–4 message sequence, compliant and in your voice. Nothing is sent until you sign off.</p></div><span class="dur">Week 2</span></div>
       <div class="pstep"><span class="num">4</span><div><b>Launch, qualify, hand off</b><p>Campaigns go live. We handle replies, filter the noise and pass you only qualified prospects.</p></div><span class="dur">Week 3 →</span></div>
     </div>
   </div>
@@ -279,9 +287,9 @@
     <div>
       <span class="eyebrow">Deliverables</span>
       <h2 style="margin:14px 0 20px">A pipeline you can act on immediately</h2>
-      <div class="dcheck">Verified prospect list for your market, refreshed monthly</div>
+      <div class="dcheck">Verified prospect list for your zone, refreshed monthly</div>
       <div class="dcheck">Fully configured, protected sending infrastructure</div>
-      <div class="dcheck">Approved message sequences in your brand's voice</div>
+      <div class="dcheck">Approved message sequences in your firm's voice</div>
       <div class="dcheck">Qualified prospects delivered straight to your inbox</div>
       <div class="dcheck">Monthly report: sends, replies, meetings booked</div>
       <a href="index.html#contact" class="btn btn-primary" style="margin-top:26px">Book a discovery call →</a>
@@ -299,10 +307,10 @@
         <span class="eyebrow">Targeting</span>
         <h2>The right 300 prospects beat the wrong 3,000</h2>
         <p class="lead">Most outreach fails before a single word is written — because it's aimed at nobody in particular.</p>
-        <p>We start by mapping your actual market: the decision-makers who match the clients you already serve best — and who are most likely to need you right now. Every contact is verified before launch, so your campaigns never bounce and never guess.</p>
-        <div class="fcheck">A list built for your offer, your market, your ideal deal</div>
+        <p>We start by mapping your actual market: the business owners, independents and professionals in your zone who match the clients you already serve best — and who are most likely to be outgrowing their current accountant. Every contact is verified before launch, so your campaigns never bounce and never guess.</p>
+        <div class="fcheck">A list built for your firm, your zone, your ideal mandate</div>
         <div class="fcheck">Every address verified — zero bounces, zero wasted sends</div>
-        <div class="fcheck">One client per niche and zone: your prospects are never shared with a direct competitor</div>
+        <div class="fcheck">One firm per zone: your prospects are never shared with a competitor</div>
       </div>
     </div>
 
@@ -312,8 +320,8 @@
         <span class="eyebrow">Deliverability</span>
         <h2>The best email in the world is worthless in a spam folder</h2>
         <p class="lead">Before anything is sent, we build the technical foundation most agencies skip.</p>
-        <p>Your campaigns run on dedicated sending domains — warmed up for weeks, fully authenticated (SPF, DKIM, DMARC), and completely separate from your company's real domain. Your professional address stays pristine, your reputation stays intact, and your messages land where decisions are made: the primary inbox.</p>
-        <div class="fcheck">Dedicated domains — your company's email address is never exposed</div>
+        <p>Your campaigns run on dedicated sending domains — warmed up for weeks, fully authenticated (SPF, DKIM, DMARC), and completely separate from your firm's real domain. Your professional address stays pristine, your reputation stays intact, and your messages land where decisions are made: the primary inbox.</p>
+        <div class="fcheck">Dedicated domains — your firm's email address is never exposed</div>
         <div class="fcheck">94% inbox placement, monitored continuously</div>
         <div class="fcheck">Volume kept deliberately low: quality sending, never blasting</div>
       </div>
@@ -323,10 +331,10 @@
       <div class="f-media m3"></div>
       <div>
         <span class="eyebrow">Copywriting</span>
-        <h2>Professional enough to protect your brand. Sharp enough to get replies.</h2>
-        <p class="lead">Writing to a busy decision-maker is a delicate exercise — hype kills trust, and jargon kills interest.</p>
-        <p>Every sequence is 3–4 short, human messages written in your brand's voice — built around the one thing your prospect actually cares about: their business. GDPR-compliant by design, with clear sender identity and a simple opt-out in every message. No templates recycled across clients. And nothing is ever sent until you've approved every word.</p>
-        <div class="fcheck">Compliant by design: clear identity, one-click opt-out</div>
+        <h2>Sober enough for your Order. Sharp enough to get replies.</h2>
+        <p class="lead">Writing to a business owner about their accounting is a delicate exercise — hype kills trust, and jargon kills interest.</p>
+        <p>Every sequence is 3–4 short, human messages written in your firm's voice: exact, discreet and non-comparative, as your code of conduct requires — but built around the one thing your prospect actually cares about, their business. No templates recycled across clients. And nothing is ever sent until you've approved every word.</p>
+        <div class="fcheck">Compliant by design: sober, exact, non-comparative</div>
         <div class="fcheck">Written in your voice, about their business — not about you</div>
         <div class="fcheck">You approve every sequence before a single send</div>
       </div>
@@ -352,11 +360,11 @@
 <section class="section">
   <div class="wrap">
     <span class="eyebrow">Who it's for</span>
-    <h2 style="margin-top:14px">We work with a small number of clients per niche</h2>
+    <h2 style="margin-top:14px">We work with a small number of firms per zone</h2>
     <div class="who-grid">
-      <div class="who"><div class="ph"></div><h3>Agencies &amp; consultancies</h3><p>You want to grow beyond referrals without spending your evenings prospecting.</p></div>
-      <div class="who"><div class="ph"></div><h3>B2B service providers</h3><p>IT, cleaning, logistics, recruitment — recurring contracts that deserve a predictable flow of the right clients.</p></div>
-      <div class="who"><div class="ph"></div><h3>Founders &amp; niche specialists</h3><p>You sell high-value services to a specific audience and want to reach exactly that audience.</p></div>
+      <div class="who"><div class="ph"></div><h3>Independent practitioners</h3><p>You want to grow beyond word of mouth without spending your evenings prospecting.</p></div>
+      <div class="who"><div class="ph"></div><h3>Growing cabinets</h3><p>You have capacity for new mandates and want a predictable flow of the right kind of client.</p></div>
+      <div class="who"><div class="ph"></div><h3>Specialised firms</h3><p>You serve a niche — freelancers, medical, e-commerce — and want to reach exactly that audience.</p></div>
     </div>
   </div>
 </section>
@@ -367,12 +375,12 @@
     <h2 style="text-align:center">Everything you need to know before starting</h2>
     <div class="faq">
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Is cold email even legal?</button>
-        <div class="faq-a"><p>Yes — B2B prospecting email operates under an opt-out regime in France and much of Europe, provided the message relates to the recipient's professional activity, clearly identifies the sender and offers a simple unsubscribe. Every campaign we send is built exactly that way.</p></div>
+        <button class="faq-q" onclick="toggleFaq(this)">Is prospecting even allowed for accountants?</button>
+        <div class="faq-a"><p>Yes — direct outreach has been permitted for the profession since the 2014 decree, provided it stays discreet, exact and non-comparative. That's precisely how we write: sober, targeted messages, never mass mailing.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Will this put my brand at risk?</button>
-        <div class="faq-a"><p>No. Every message is professional, sent from a dedicated domain — and nothing goes out without your explicit approval.</p></div>
+        <button class="faq-q" onclick="toggleFaq(this)">Will this put my firm's reputation at risk?</button>
+        <div class="faq-a"><p>No. Every message is dignified, professional and sent from a dedicated domain — and nothing goes out without your explicit approval.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">How much of my time does it take?</button>
@@ -393,8 +401,8 @@
 <!-- FOOTER -->
 <footer class="foot-cta">
   <div class="foot-cta-inner">
-    <h2>Ready to fill your pipeline?</h2>
-    <p>Let's create measurable growth for your business with cold email that actually books meetings.</p>
+    <h2>Ready to grow your client book?</h2>
+    <p>Let's create measurable growth for your firm with compliant cold email that books real meetings.</p>
     <a href="index.html#contact" class="btn btn-primary">Book a discovery call →</a>
   </div>
   <div class="foot-nav">
@@ -403,7 +411,7 @@
         <svg class="mark" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#EF571D" stroke-width="2"/><path d="M12 2v6M12 16v6M2 12h6M16 12h6" stroke="#EF571D" stroke-width="2"/><circle cx="12" cy="12" r="2.4" fill="#EF571D"/></svg>
         <span><b>mlk</b>LeadHunters</span>
       </div>
-      <p style="color:#a7a2d6;font-size:13.5px;margin-top:14px;max-width:30ch">Done-for-you B2B cold email. Paris &amp; Île-de-France.</p>
+      <p style="color:#a7a2d6;font-size:13.5px;margin-top:14px;max-width:32ch">Done-for-you cold email for accounting firms. Paris &amp; Île-de-France.</p>
     </div>
     <div class="foot-col"><h4>Services</h4><a href="how-we-work.html#targeting">Targeting</a><a href="how-we-work.html#deliverability">Deliverability</a><a href="how-we-work.html#copywriting">Copywriting</a><a href="how-we-work.html#reporting">Reporting</a></div>
     <div class="foot-col"><h4>Company</h4><a href="index.html#work">Case studies</a><a href="how-we-work.html">How we work</a><a href="index.html#pricing">Pricing</a><a href="index.html#contact">Contact</a></div>
@@ -411,7 +419,7 @@
   </div>
   <div class="foot-bottom">
     <span>© 2026 mlkLeadHunters. All rights reserved.</span>
-    <span>B2B cold email that books real meetings.</span>
+    <span>Compliant cold email for accountants.</span>
   </div>
 </footer>
 
